@@ -1,7 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap');
-    /* font-family: 'Arima', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap");
+  /* font-family: 'Arima', cursive; */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-    background: #CABBB3;
-    color: #464042;
+  background-color: #cabbb3;
+  background-image: url(ac-ovl-light.png);
+  /* background-image: url(https://pbs.twimg.com/media/FhxIN2ZacAE6eBy?format=png&name=900x900); */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #464042;
+  font-family: 'Arima', cursive;
+}
+
+header {
+  width: 100%;
+  padding: 25px;
+  padding-bottom: 10px;
+  background-color: #464042;
+  color: #cabbb3;
+  text-align: center;
+  box-shadow: 0 10px 25px #cabbb380; /* light */
+  /* box-shadow: 0 10px 25px #46404280; /* dark */
+  position: relative;
+  z-index: 1;
+}
+.acGDL-logo {
+  width: 100%;
+  height: 100px;
+}
+.acGDL {
+  background-image: url(GDL-AstraeaCentrale.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background: linear-gradient(#464042, #000);
+  width: 100%;
+  padding: 25px;
+  color: #cabbb3;
+  text-align: center;
+  font-style: italic;
+}
+
+.light {
+  background-color: #cabbb3;
+  width: 100%;
+  padding: 25px;
+  color: #464042;
+  text-align: center;
+}
+.dark {
+  background-color: #464042;
+  width: 100%;
+  padding: 25px;
+  color: #cabbb3;
+  text-align: center;
+}
+
+.dualfeed-col /* dual feed */ {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+}
+.trifeed-col /* tri feed */ {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding: 20px;
+}
+.quadfeed-col /* quad feed */ {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+.feed-row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 1000px) {
+  .dualfeed-col, .trifeed-col, .quadfeed-col {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.PriConne-event {
+  background-image: url(https://pbs.twimg.com/media/FhxIN2ZacAE6eBy?format=png&name=900x900);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 50%;
+}
+
+.hero {
+  width: 100%;
+  padding: 50px;
+  font-size: 96px;
+  font-weight: bold;
+  color: transparent;
+  text-align: center;
+}
+.heroShijo {
+  background-image: url(mama_rei.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.heroSenri {
+  background-image: url(mama_kaiser.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.heroEvent {
+  background-image: url(https://pbs.twimg.com/media/FhxIN2ZacAE6eBy?format=png&name=900x900);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
