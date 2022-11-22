@@ -1,7 +1,7 @@
 //all code is based on W3Schools: https://www.w3schools.com/howto/howto_js_countdown.asp
 //and stackoverflow answer: https://stackoverflow.com/questions/40263537/javascript-countdown-timer-in-gmt-utc
 
-var countDownDate = new Date('Nov 22, 2022 11:00:00 GMT+00:00').getTime();
+var countDownDate = new Date('Nov 22, 2022 23:00:00 GMT+00:00').getTime();
 
 var x = setInterval(function() {
   
