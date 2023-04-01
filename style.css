@@ -13,10 +13,17 @@ html, body {
   box-sizing: border-box;
 }
 
+/*
+  light: #cabbb3
+  dark: #464042
+*/
+
+/* ARCHIVED 17 JAN 2023
+
 body {
   background-color: #cabbb3;
   background-image: url(ac-ovl-light.png);
-  /* background-image: url(https://pbs.twimg.com/media/FhxIN2ZacAE6eBy?format=png&name=900x900); */
+    background-image: url(https://pbs.twimg.com/media/FhxIN2ZacAE6eBy?format=png&name=900x900);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -32,8 +39,8 @@ header {
   background-color: #464042;
   color: #cabbb3;
   text-align: center;
-  box-shadow: 0 10px 25px #cabbb380; /* light */
-  /* box-shadow: 0 10px 25px #46404280; /* dark */
+  box-shadow: 0 10px 25px #cabbb380; (light)
+    box-shadow: 0 10px 25px #46404280; (dark)
   position: relative;
   z-index: 1;
 }
@@ -74,19 +81,19 @@ footer {
   text-align: center;
 }
 
-.dualfeed-col /* dual feed */ {
+.dualfeed-col (dual feed) {
   float: left;
   width: 50%;
   text-align: center;
   padding: 20px;
 }
-.trifeed-col /* tri feed */ {
+.trifeed-col (tri feed) {
   float: left;
   width: 33.33%;
   text-align: center;
   padding: 20px;
 }
-.quadfeed-col /* quad feed */ {
+.quadfeed-col (quad feed) {
   float: left;
   width: 25%;
   text-align: center;
@@ -148,4 +155,65 @@ footer {
   background-attachment: fixed;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+*/
+
+html {
+  background-color: #464042;
+  background-image: url(night_banner.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Arima', cursive;
+}
+body {
+  background-color: #00000033;
+  background-image: url(ac-ovl-dark.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+footer {
+  background-color: #464042;
+  width: 100%;
+  padding: 25px;
+  color: #cabbb3;
+  text-align: center;
+  font-style: italic;
+}
+
+.outro {
+  width: 100%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  font-size: x-large;
+}
+img {
+  max-width: 75%;
+  height: auto;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+@media screen and (max-width: 750px) {
+  .outro {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: medium;
+  }
+  img {
+    max-width: 100%;
+  }
 }
