@@ -1,7 +1,7 @@
 //all code is based on W3Schools: https://www.w3schools.com/howto/howto_js_countdown.asp
 //and stackoverflow answer: https://stackoverflow.com/questions/40263537/javascript-countdown-timer-in-gmt-utc
 
-var countDownDate = new Date('Apr 30, 2023 0ó:00:00 GMT+09:00').getTime();
+var countDownDate = new Date('Apr 30, 2023 09:00:00 GMT+09:00').getTime();
 
 var x = setInterval(function() {
   
