@@ -217,3 +217,10 @@ img {
     max-width: 100%;
   }
 }
+
+.twtr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
