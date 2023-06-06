@@ -22,7 +22,7 @@ var x = setInterval(function() {
     clearInterval(x);
 
     //document.getElementById("evtTimer").innerHTML = "Event begins now!";
-    document.title = "00:00:00:00";
+    document.title = "GourmetDayLife / Astraea Centrale";
 
   }
 }, 1000);

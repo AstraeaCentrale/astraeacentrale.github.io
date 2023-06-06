@@ -224,3 +224,37 @@ img {
   align-items: center;
   width: auto;
 }
+
+img, blockquote, iframe {
+  -moz-border-radius: 12.5px;
+  -ms-border-radius: 12.5px;
+  -webkit-border-radius: 12.5px;
+  -o-border-radius: 12.5px;
+  border-radius: 12.5px;
+}
+
+.ytembed {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  width: 650px;
+  height: 650px;
+  max-height: auto;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+.ytembed::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+.ytembed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
