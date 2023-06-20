@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap");
   /* font-family: 'Arima', cursive; */
 
+@font-face {
+  font-family: "kaiserSimSun";
+  src: url(kaiserSimSun.woff);
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -18,243 +23,42 @@ html, body {
   dark: #464042
 */
 
-/* ARCHIVED 17 JAN 2023
-
-body {
-  background-color: #cabbb3;
-  background-image: url(ac-ovl-light.png);
-    background-image: url(https://pbs.twimg.com/media/FhxIN2ZacAE6eBy?format=png&name=900x900);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #464042;
-  font-family: 'Arima', cursive;
-}
-
-header {
-  width: 100%;
-  padding: 25px;
-  padding-bottom: 10px;
-  background-color: #464042;
-  color: #cabbb3;
-  text-align: center;
-  box-shadow: 0 10px 25px #cabbb380; (light)
-    box-shadow: 0 10px 25px #46404280; (dark)
-  position: relative;
-  z-index: 1;
-}
-.acGDL-logo {
-  width: 100%;
-  height: 100px;
-}
-.acGDL {
-  background-image: url(GDL-AstraeaCentrale.svg);
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
-footer {
-  background: linear-gradient(#464042, #000);
-  width: 100%;
-  padding: 25px;
-  color: #cabbb3;
-  text-align: center;
-  font-style: italic;
-}
-
-.light {
-  background-color: #cabbb3;
-  width: 100%;
-  padding: 25px;
-  color: #464042;
-  text-align: center;
-}
-.dark {
-  background-color: #464042;
-  width: 100%;
-  padding: 25px;
-  color: #cabbb3;
-  text-align: center;
-}
-
-.dualfeed-col (dual feed) {
-  float: left;
-  width: 50%;
-  text-align: center;
-  padding: 20px;
-}
-.trifeed-col (tri feed) {
-  float: left;
-  width: 33.33%;
-  text-align: center;
-  padding: 20px;
-}
-.quadfeed-col (quad feed) {
-  float: left;
-  width: 25%;
-  text-align: center;
-  padding: 20px;
-}
-.feed-row:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-@media screen and (max-width: 1000px) {
-  .dualfeed-col, .trifeed-col, .quadfeed-col {
-    width: 100%;
-    padding: 10px;
-  }
-}
-
-.PriConne-event {
-  background-image: url(mama_rei.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: 50%;
-}
-
-.hero {
-  width: 100%;
-  padding: 50px;
-  font-size: 96px;
-  font-weight: bold;
-  color: transparent;
-  text-align: center;
-}
-.heroShijo {
-  background-image: url(mama_rei.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-.heroSenri {
-  background-image: url(mama_kaiser.png);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-.heroEvent {
-  background-image: url(https://pbs.twimg.com/media/FhxIN2ZacAE6eBy?format=png&name=900x900);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-*/
-
 html {
   background-color: #464042;
-  background-image: url(night_banner.png);
+  background-image: url(ac-ovl-dark.png), url(kaiserBG.png);
+  background-blend-mode: normal;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
-  font-family: 'Arima', cursive;
 }
-body {
-  background-color: #00000033;
-  background-image: url(ac-ovl-dark.png);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+
+body { font-family: "kaiserSimSun", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Arima', cursive; }
 
 footer {
   background-color: #464042;
   width: 100%;
-  padding: 25px;
+  padding: 10px;
   color: #cabbb3;
   text-align: center;
+  font-family: 'Arima', cursive;
   font-style: italic;
 }
 
-.outro {
-  width: 100%;
-  padding-top: 250px;
-  padding-bottom: 250px;
-  padding-left: 100px;
-  padding-right: 100px;
+.HeroImg {
+  background-size: cover;
+  background-position: 32.5% center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.text {
+  padding: 50px;
   text-align: center;
-  font-size: x-large;
 }
-img {
-  max-width: 75%;
-  height: auto;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
+
+img, iframe {
   border-radius: 15px;
-}
-@media screen and (max-width: 750px) {
-  .outro {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: medium;
-  }
-  img {
-    max-width: 100%;
-  }
-}
-
-.twtr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-}
-
-img, blockquote, iframe {
-  -moz-border-radius: 12.5px;
-  -ms-border-radius: 12.5px;
-  -webkit-border-radius: 12.5px;
-  -o-border-radius: 12.5px;
-  border-radius: 12.5px;
-}
-
-.ytembed {
-  overflow: hidden;
-  position: relative;
-  max-width: 100%;
-  width: 650px;
-  height: 650px;
-  max-height: auto;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  border-radius: 15px;
-}
-.ytembed::after {
-  padding-top: 56.25%;
-  display: block;
-  content: '';
-}
-.ytembed iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
