@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap");
-  /* font-family: 'Arima', cursive; */
-
+  /* font-family: "Arima", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+  /* font-family: "Martian Mono", monospace */
 @font-face {
   font-family: "kaiserSimSun";
   src: url(kaiserSimSun.woff);
@@ -34,9 +35,9 @@ html {
   color: white;
 }
 
-body { font-family: "kaiserSimSun", sans-serif; }
+body { font-family: "kaiserSimSun"; }
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Arima', cursive; }
+h1, h2, h3, h4, h5, h6 { font-family: "Arima", cursive; }
 
 footer {
   background-color: #464042;
@@ -44,7 +45,7 @@ footer {
   padding: 10px;
   color: #cabbb3;
   text-align: center;
-  font-family: 'Arima', cursive;
+  font-family: "Arima", cursive;
   font-style: italic;
 }
 
@@ -61,4 +62,43 @@ footer {
 
 img, iframe {
   border-radius: 15px;
+}
+
+.KaiserBtn {
+  background-color: #3d374c;
+  border: solid 1px white;
+  border-radius: 5px;
+  color: white;
+  padding: 25px 50px;
+  font-family: "kaiserSimSun";
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px;
+  cursor: pointer;
+}
+.KaiserBtn:hover {
+  background-color: #2f2b3a;
+}
+
+.ACurls:link {
+  color: #cabbb3;
+  text-decoration: none;
+}
+.ACurls:visited {
+  color: #cabbb3;
+  text-decoration: none;
+}
+.ACurls:hover {
+  color: #afa199;
+  text-decoration: none;
+}
+.ACurls:active {
+  color: #6d6467;
+  text-decoration: none;
+}
+
+.ACurls-foot {
+  padding: 0 10px;
 }
