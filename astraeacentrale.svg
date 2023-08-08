@@ -1,4 +1,6 @@
-<svg width="961" height="401" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden">
+<svg width="961" height="401"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden">
     <defs>
         <clipPath id="clip0">
             <rect x="349" y="601" width="961" height="401" />
