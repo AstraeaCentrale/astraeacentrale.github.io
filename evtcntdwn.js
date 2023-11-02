@@ -25,4 +25,4 @@ var x = setInterval(function() {
     document.title = "GourmetDayLife / Astraea Centrale";
 
   }
-}, 1000);
+}, 0);
