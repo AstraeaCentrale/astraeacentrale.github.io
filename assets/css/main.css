@@ -1,0 +1,27 @@
+@import url(/assets/css/fonts.css);
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #464042;
+}
+body {
+  font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #cabbb3;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}

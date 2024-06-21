@@ -3,29 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="thebelovedmoon">
+    <meta name="author" content="GourmetDayLife">
     <title>GourmetDayLife / Astraea Centrale</title>
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <style>
-      /* custom css args here */
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      .stickyNotif {
-        background-color: #3d374c;
-        color: white;
-        font-family: "Arima", cursive;
-        font-weight: bold;
-        padding: 5px;
-        text-align: center;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        z-index: 5;
-      }
-    </style>
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png" type="image/x-icon">
     <meta name="og:type" content="website">
     <meta name="og:title" content="GourmetDayLife / Astraea Centrale">
     <meta name="og:image" content="https://pbs.twimg.com/media/Fx75LOnaAAASGyL?format=jpg&name=large">
@@ -37,85 +18,31 @@
     <meta name="msapplication-TileColor" content="#464042">
     <meta name="msapplication-navbutton-color" content="#464042">
     <meta name="apple-mobile-web-app-status-bar-style" content="#464042">
+    <!-- css -->
+    <link href="/assets/css/main.css" rel="stylesheet" type="text/css" media="all"> <!-- builtin -->
+    <style type="text/css">
+      /* inpage css */
+      @import url(/assets/css/home.css);
+    </style>
+    <!-- js -->
+    <script src="/assets/js/main.js" type="text/javascript"></script> <!-- builtin -->
+    <script type="text/javascript">
+      function inPageStart() {
+        // inPageStart() args here
+      }
+    </script>
+    <script type="text/javascript">
+      // inpage js
+    </script>
   </head>
-  <body>
-    <div class="stickyNotif">
-      <p>this site will be given a fresh new look!! ETA: 3mos.</p>
-    </div>
-    <!-- KAISER INSIGHT EVENT -->
-    <div class="HeroImg" style="background-image: url(KaiserRei.png); width: 100%; height: 100%;"></div>
-    <div class="HeroImg" style="background-image: url(KaiserRei.png);">
-      <div class="text" style="background-color: #3d374cbf;">
-        <h1>Kaiser Insight event will commence soon!</h1>
+  <body onload="start()">
+    <div class="fullscreen">
+      <div>
+        <img src="/assets/svg/gdl_ac_light.svg" alt="" width="500px">
         <p>
-          In light of the upcoming VTuber event under <b>thebelovedmoon</b>, the "Kaiser Insight" event
-          commences for the whole of June until the rest of the year!
-        </p>
-        <br><br>
-        <h1>What is the Kaiser Insight event?</h1>
-        <p>
-          This is a VTuber event conducted by thebelovedmoon (known as 💚🍃Aga-chuu💗🌸 of 「VTresMarias
-          - V三人のマリア - 」) to represent the Princess Connect! community. It was first commenced 1 July
-          2022 in conjunction to the "Mahoroba Youjo Kitan" event that commemorates the shutdown of the
-          game the day before.
-        </p>
-        <br>
-        <img src="https://pbs.twimg.com/media/Fx75LOnaAAASGyL?format=jpg&name=large" alt="" style="width: 1080px;">
-        <br><br><br>
-        <h1>When will the Kaiser Insight event last?</h1>
-        <p>
-          The event will commence every July of the year. Some extensions may be applied when July concludes,
-          but it's up to thebelovedmoon to decide.
-        </p>
-        <br><br>
-        <p>
-          <button class="KaiserBtn" onclick="window.open('https://thebelovedmoon.carrd.co#kaiser', '_blank')" title="">Details over Carrd</button>
+          returns July 2024
         </p>
       </div>
     </div>
-    <!-- PRICONNE EN SHUTDOWN EVENT -->
-    <div class="HeroImg" style="background-image: url(ac-ovl-dark.png), url(night_banner.png); background-blend-mode: normal; background-position: center center; width: 100%; height: 100%;"></div>
-    <div class="HeroImg" style="background-image: url(ac-ovl-dark.png), url(night_banner.png); background-blend-mode: normal; background-position: center center;">
-      <div class="text" style="background-color: #46404280;">
-        <h1>「The Battle of Landosol has long ended, and Landosol is at peace. But the Gourmet Guild and Co. still ventures forth...」</h1>
-        <p>
-          <b>Princess Connect! Re:Dive Global EN has shut down last 30 Apr at 1am UTC.</b> And with it,
-          are the memories of all who have been playing since it was first released.
-        </p>
-        <p>
-          GourmetDayLife has partnered with Sakura Sumiyoi 【墨宵🌸桜】 (through thebelovedmoon) to formally
-          put the series to a close as the timer reached zero. thebelovedmoon also has debuted a song
-          dedicated to the game, 3 days after the shutdown has commenced.
-        </p>
-        <br><br>
-        <h1>An open message to Princess Connect! Re:Dive Global EN</h1>
-        <br>
-        <img src="20230430_OpenMessage.png" alt="" style="width: 625px;">
-        <br><br><br>
-        <h1>tbmSenri's Profile Card (as of 30 Apr 2023)</h1>
-        <br>
-        <img style="border-radius: 0;" src="252329741_profilecard.png" alt="" style="width: 1080px;">
-        <br><br><br>
-        <h1>Until we meet again, Astraea.</h1>
-        <br>
-        <iframe style="aspect-ratio: 1 / 1; width: 750px; max-width: 100%;"
-          src="https://www.youtube-nocookie.com/embed/PU3HybaN1Kc?controls=0"
-          title="Until we meet again, Astraea."
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-    <footer>
-      <p>
-        Est. 2021 under Astraea Centrale. Not affiliated with Cygames, Inc.
-        <a class="ACurls" rel="noopener noreferrer" href="https://github.com/AstraeaCentrale/astraeacentrale.github.io" target="_blank">Source code</a> licensed under MIT.
-      </p>
-      <p>
-        <a class="ACurls ACurls-foot" rel="noopener noreferrer" href="https://mobile.twitter.com/GourmetDayLife" target="_blank">Twitter</a>
-        <a class="ACurls ACurls-foot" href="mailto:gourmetdaylife@outlook.com">Email</a>
-      </p>
-    </footer>
   </body>
 </html>
