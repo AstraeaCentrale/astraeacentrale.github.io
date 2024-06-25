@@ -1,4 +1,4 @@
-@import url(/assets/css/fonts.css);
+@import url("/assets/css/fonts.css");
 
 html, body {
   margin: 0;
@@ -24,4 +24,17 @@ img, video {
   height: auto;
   display: block;
   pointer-events: none;
+}
+
+button {
+  background-color: #464042;
+  border: #cabbb3 .125rem solid;
+  border-radius: .75rem;
+  padding: .75rem 1.25rem;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #383335;
 }
