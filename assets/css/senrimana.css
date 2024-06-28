@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"); /* googlefonts */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  color: inherit;
+  cursor: pointer;
+}
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css"); /* fontawesome */
+
+:root {
+  --kaizaGr: linear-gradient(to right, #b98b73 0%, #ecd6a1 50%, #b98b73 100%);
+}
+
 html {
   background-color: #3d374c !important;
 }
@@ -63,7 +75,7 @@ footer > span {
 }
 .intro > div {
   width: 100vw;
-  background-color: #1c1822a0;
+  background-color: #1c1822c0;
   padding: 15rem 2rem;
 }
 .intro > div > div {
@@ -72,20 +84,46 @@ footer > span {
   margin: 0 auto;
 }
 
-.whatsHappening {
+div[latestLineup] {
   background-image: url("/assets/images/background/kaizaBG.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   padding: 2rem;
 }
-.whatsHappening > span {
-  font-size: x-large;
+div[flexSheet] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div[flexSheet] > .material-symbols-outlined:hover {
+  color: red;
+}
+div[flexSheet] > span {
+  font-size: 1.75rem;
   font-weight: bold;
+}
+div[scrollInstruct] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span[instructText] {
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: bold;
+}
+span[instructSym] {
+  cursor: initial !important;
 }
 .eventFeed {
   overflow: auto;
   white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.eventFeed::-webkit-scrollbar {
+  display: none;
 }
 .eventFeed > div {
   margin: 2rem .5rem 0 .5rem;
@@ -104,7 +142,7 @@ footer > span {
   width: -moz-fit-content;
   width: fit-content;
   white-space: initial !important;
-  padding: 1.5rem;
+  padding: 1.25rem;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -116,20 +154,127 @@ footer > span {
   display: block;
 }
 span[type="date"] {
-  font-size: small;
+  font-size: .8rem;
 }
 span[type="eventTitle"] {
-  font-size: large;
+  font-size: 1.15rem;
   font-weight: bold;
 }
 span[type="eventText"] {
-  font-size: medium;
+  font-size: 1rem;
 }
-.completed {
+div[pastLineup] {
+  background-color: #3d374c;
+  padding: 2rem;
+}
+.pastLineups > div {
+  width: 250px !important;
+}
+.pastLineups > div > div > span[eventTitle] {
+  font-size: .7rem;
+}
+.completed { /* if an event is already done */
   display: none !important;
 }
 
+div[senri] {
+  background-image: url("/assets/images/background/kaizaBG.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 2.5rem;
+}
+button[senri] {
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+}
+img[senri] {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center top;
+  margin: 0 auto;
+}
+
+div[senriBorder] {
+  width: 100vw;
+  height: 15px;
+  background: var(--kaizaGr);
+}
+
+div[asTable] {
+  overflow: auto;
+}
+div[asTable] > div {
+  float: left;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div[asTable] > div > div {
+  width: 100%;
+  height: 100%;
+  padding: 15rem 2rem;
+  background-color: #3d374cc0;
+}
+div[asTable] > div > div > div {
+  text-align: center !important;
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+div[socials] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div[socials] > span, svg {
+  padding: 0 7.5px 0 7.5px !important;
+  cursor: pointer;
+}
+div[socials] > svg {
+  height: 1.25rem !important;
+}
+div[阿賀忠] {
+  background-image: url("https://pbs.twimg.com/media/FbH9U7UVsAUzMMQ?format=jpg&name=4096x4096");
+  background-position: center 40%;
+}
+div[蒼井翔太] {
+  background-image: url("https://www.shouta-aoi.jp/img/banner/pc/6641d55722e40.jpg");
+  background-position: center top;
+}
+
 /* responsive display */
+@media screen and (max-width: 1000px) {
+  div[asTable] > div {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  div[flexSheet] > .wide {
+    display: flex;
+  }
+  div[flexSheet] > .min {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  div[flexSheet] > .wide {
+    display: none;
+  }
+  div[flexSheet] > .min {
+    display: flex;
+  }
+}
+@media screen and (max-width: 500px) {
+  div[flexSheet] > .wide {
+    display: none;
+  }
+  div[flexSheet] > .min {
+    display: none;
+  }
+}
 @media screen and (max-width: 400px) {
   header > div {
     display: none;
