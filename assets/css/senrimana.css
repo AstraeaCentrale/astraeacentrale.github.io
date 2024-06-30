@@ -173,7 +173,7 @@ div[pastLineup] {
 .pastLineups > div > div > span[eventTitle] {
   font-size: .7rem;
 }
-.completed { /* if an event is already done */
+div[completed] { /* if an event is already done */
   display: none !important;
 }
 
