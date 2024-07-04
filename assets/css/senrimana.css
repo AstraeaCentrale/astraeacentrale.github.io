@@ -177,6 +177,32 @@ div[completed] { /* if an event is already done */
   display: none !important;
 }
 
+div[class="intro"] > div > div > div[socials] {
+  margin: unset;
+}
+
+div[dailyKaiser] {
+  padding: 2rem;
+  background-color: #e5e3e1;
+  color: #3d374c;
+}
+div[dailyKaiser] > .dailyKaiser > div {
+  width: 500px !important;
+  border: #3d374c solid .125rem;
+  background-color: #e5e3e1;
+  color: #3d374c;
+  font-weight: bold;
+}
+div[dailyKaiser] > .dailyKaiser > div:hover {
+  background-color: #b1afad;
+}
+div[dailyKaiser] > .dailyKaiser > div > img {
+  aspect-ratio: 1 / 1;
+}
+div[dailyKaiser] > .dailyKaiser > div > div > span::before {
+  content: "illust. ";
+}
+
 div[senri] {
   background-image: url("/assets/images/background/kaizaBG.png");
   background-size: cover;
@@ -192,7 +218,9 @@ button[senri] {
 }
 img[senri] {
   aspect-ratio: 16 / 9;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center top;
   object-position: center top;
   margin: 0 auto;
 }
@@ -225,12 +253,11 @@ div[asTable] > div > div > div {
   margin: 0 auto;
 }
 div[socials] {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin: 0 auto;
 }
 div[socials] > span, svg {
-  padding: 0 7.5px 0 7.5px !important;
+  padding: 5px !important;
   cursor: pointer;
 }
 div[socials] > svg {
@@ -243,6 +270,14 @@ div[阿賀忠] {
 div[蒼井翔太] {
   background-image: url("https://www.shouta-aoi.jp/img/banner/pc/6641d55722e40.jpg");
   background-position: center top;
+}
+
+img[showtaSenri] {
+  width: 100vw;
+  height: auto;
+  aspect-ratio: 21 / 9;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 /* responsive display */
