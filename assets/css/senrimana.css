@@ -274,8 +274,7 @@ div[蒼井翔太] {
 
 img[showtaSenri] {
   width: 100vw;
-  height: auto;
-  aspect-ratio: 21 / 9;
+  height: 100vh;
   -o-object-fit: cover;
   object-fit: cover;
 }
