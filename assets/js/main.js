@@ -1,6 +1,7 @@
 function start() {
   inPageStart(); // per page start
   jstClock();
+  dailyKaiser();
 }
 
 function jstClock() {
@@ -52,5 +53,11 @@ function month(mth) {
   const mos = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   for (let m = mth; m <= 12; m++) {
     return mth = mos[m];
+  }
+}
+
+function dailyKaiser() {
+  for (let m = 0; m < 31; m++) {
+    document.getElementById("dailyKaiser-" + (m + 1)).innerHTML = "Day " + (m + 1);
   }
 }

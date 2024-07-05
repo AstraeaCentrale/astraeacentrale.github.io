@@ -173,6 +173,9 @@ div[pastLineup] {
 .pastLineups > div {
   width: 250px !important;
 }
+.pastLineups > div[unreleased] {
+  display: none;
+}
 .pastLineups > div > div > span[eventTitle] {
   font-size: .7rem;
 }
@@ -204,6 +207,17 @@ div[dailyKaiser] > .dailyKaiser > div > img {
 }
 div[dailyKaiser] > .dailyKaiser > div > div > span::before {
   content: "illust. ";
+}
+div[dailyKaiser] > .dailyKaiser > div > div > span[memeFormat]::before { /* override default span */
+  content: "a meme by ";
+}
+
+span[id^="dailyKaiser-"] {
+  font-size: .875rem;
+  text-transform: uppercase;
+}
+span[id^="dailyKaiser-"]::before {
+  content: unset !important;
 }
 
 div[senri] {
@@ -262,6 +276,9 @@ div[socials] {
 div[socials] > span, svg {
   padding: 5px !important;
   cursor: pointer;
+}
+div[socials] > span:hover, svg:hover {
+  color: red;
 }
 div[socials] > svg {
   height: 1.25rem !important;
