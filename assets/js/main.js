@@ -1,7 +1,5 @@
 function start() {
   inPageStart(); // per page start
-  jstClock();
-  dailyKaiser();
 }
 
 function jstClock() {
@@ -54,6 +52,21 @@ function month(mth) {
   for (let m = mth; m <= 12; m++) {
     return mth = mos[m];
   }
+}
+
+function isLineupActive(s) {
+  if (s == 0) {
+    document.getElementById("vodList").style.display = "none";
+    document.getElementById("noVod").style.display = "block";
+  } else if (s == 1) {
+    document.getElementById("vodList").style.display = "block";
+    document.getElementById("noVod").style.display = "none";
+  }
+}
+
+function lineupUpdated(mm, dd, yy) {
+  const dt = new Date(new Date(yy, mm, dd).getTime() + diffOffs(9));
+  document.getElementById("lineupUpd").innerHTML = dt.getDate() + " " + month(dt.getMonth() - 1) + " " + dt.getFullYear() + " JST";
 }
 
 function dailyKaiser() {

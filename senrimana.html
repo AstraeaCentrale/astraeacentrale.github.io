@@ -28,9 +28,14 @@
     <!-- js -->
     <script src="/assets/js/main.js" type="text/javascript"></script> <!-- builtin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" type="text/javascript"></script> <!-- fontawesome -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script> <!-- jquery -->
     <script type="text/javascript">
       function inPageStart() {
         // inPageStart() args here
+        jstClock();
+        isLineupActive(1);
+        lineupUpdated(7, 6, 2024);
+        dailyKaiser();
       }
     </script>
     <script type="text/javascript">
@@ -83,7 +88,8 @@
         <div scrollInstruct class="min"><span instructSym class="material-symbols-outlined">arrow_back</span><span instructText>&ensp;scroll&ensp;</span><span instructSym class="material-symbols-outlined">arrow_forward</span></div>
         <span class="material-symbols-outlined" title="check out the series on YouTube" onclick="window.open('https://youtube.com/playlist?list=PL3F_PWEsl2a8seEk3SmEg7CJLWbXNM6m_')">video_library</span>
       </div>
-      <div class="eventFeed"> <!-- 2024 broadcast lineup -->
+      <span>lineup updated <span id="lineupUpd">fetching date..</span>
+      <div id="vodList" class="eventFeed"> <!-- 2024 broadcast lineup -->
         <div completed onclick="window.open('https://youtu.be/tCSJif4U5rM')"> <!-- event -->
           <img src="https://i.ytimg.com/vi/tCSJif4U5rM/hq720.jpg" alt="" width="375px">
           <div>
@@ -147,7 +153,7 @@
         <div onclick="window.open('https://youtu.be/Bn1hNkIi4ug')"> <!-- event -->
           <img src="https://i.ytimg.com/vi/Bn1hNkIi4ug/hq720.jpg" alt="" width="375px">
           <div>
-            <span type="date">7 Jul 2024 12am JST</span>
+            <span type="date">9 Jul 2024 12am JST</span>
             <br>
             <span type="eventTitle">プリンセスコネクト！Re:Dive🖤💜</span>
             <br>
@@ -159,7 +165,7 @@
         <div onclick="window.open('https://youtu.be/yheT7LqlLzw')"> <!-- event -->
           <img src="https://i.ytimg.com/vi/yheT7LqlLzw/hq720.jpg" alt="" width="375px">
           <div>
-            <span type="date">8 Jul 2024 12am JST</span>
+            <span type="date">10 Jul 2024 12am JST</span>
             <br>
             <span type="eventTitle">千里真那 lore🖤💜</span>
             <br>
@@ -171,7 +177,7 @@
         <div onclick="window.open('https://youtu.be/SGyIDMP7fOs')"> <!-- event -->
           <img src="https://i.ytimg.com/vi/SGyIDMP7fOs/hq720.jpg" alt="" width="375px">
           <div>
-            <span type="date">9 Jul 2024 12am JST</span>
+            <span type="date">11 Jul 2024 12am JST</span>
             <br>
             <span type="eventTitle">千里真那 lore🖤💜</span>
             <br>
@@ -183,7 +189,7 @@
         <div onclick="window.open('https://youtu.be/kw9PB_Qi-pI')"> <!-- event -->
           <img src="https://i.ytimg.com/vi/kw9PB_Qi-pI/hq720.jpg" alt="" width="375px">
           <div>
-            <span type="date">11 Jul 2024 12am JST</span>
+            <span type="date">12 Jul 2024 12am JST</span>
             <br>
             <span type="eventTitle">ASMR with Kaiza🖤💜</span>
             <br>
@@ -195,7 +201,7 @@
         <div onclick="window.open('https://youtu.be/BGErhOK-sUo')"> <!-- event -->
           <img src="https://i.ytimg.com/vi/BGErhOK-sUo/hq720.jpg" alt="" width="375px">
           <div>
-            <span type="date">12 Jul 2024 12am JST</span>
+            <span type="date">13 Jul 2024 12am JST</span>
             <br>
             <span type="eventTitle">プリンセスコネクト！Re:Dive🖤💜</span>
             <br>
@@ -207,7 +213,7 @@
         <div onclick="window.open('https://youtu.be/y_hcxR4xTW0')"> <!-- event -->
           <img src="https://i.ytimg.com/vi/y_hcxR4xTW0/hq720.jpg" alt="" width="375px">
           <div>
-            <span type="date">13 Jul 2024 12am JST</span>
+            <span type="date">14 Jul 2024 12am JST</span>
             <br>
             <span type="eventTitle">プリンセスコネクト！Re:Dive🖤💜</span>
             <br>
@@ -219,7 +225,7 @@
         <div onclick="window.open('https://youtu.be/xSXUGXG_gMM')"> <!-- event -->
           <img src="https://i.ytimg.com/vi/xSXUGXG_gMM/hq720.jpg" alt="" width="375px">
           <div>
-            <span type="date">14 Jul 2024 12am JST</span>
+            <span type="date">15 Jul 2024 12am JST</span>
             <br>
             <span type="eventTitle">千里真那 explores other games🖤💜</span>
             <br>
@@ -231,7 +237,7 @@
         <div onclick="window.open('https://youtu.be/prJdvO6Mxcg')"> <!-- event -->
           <img src="https://i.ytimg.com/vi/prJdvO6Mxcg/hq720.jpg" alt="" width="375px">
           <div>
-            <span type="date">15 Jul 2024 12am JST</span>
+            <span type="date">16 Jul 2024 12am JST</span>
             <br>
             <span type="eventTitle">web development🖤💜</span>
             <br>
@@ -243,7 +249,7 @@
         <div onclick="window.open('https://youtu.be/e0SRbr91YXI')"> <!-- event -->
           <img src="https://i.ytimg.com/vi/e0SRbr91YXI/hq720.jpg" alt="" width="375px">
           <div>
-            <span type="date">16 Jul 2024 12am JST</span>
+            <span type="date">17 Jul 2024 12am JST</span>
             <br>
             <span type="eventTitle">Kaiza 3.0 vroid🖤💜</span>
             <br>
@@ -255,7 +261,7 @@
         <div onclick="window.open('https://youtu.be/Pl9yNMeByJE')"> <!-- event -->
           <img src="https://i.ytimg.com/vi/Pl9yNMeByJE/hq720.jpg" alt="" width="375px">
           <div>
-            <span type="date">17 Jul 2024 12am JST</span>
+            <span type="date">18 Jul 2024 12am JST</span>
             <br>
             <span type="eventTitle">TERASENE🖤💜</span>
             <br>
@@ -267,7 +273,7 @@
         <div onclick="window.open('https://youtu.be/JF4DZFsCy44')"> <!-- event -->
           <img src="https://i.ytimg.com/vi/JF4DZFsCy44/hq720.jpg" alt="" width="375px">
           <div>
-            <span type="date">18 Jul 2024 12am JST</span>
+            <span type="date">19 Jul 2024 12am JST</span>
             <br>
             <span type="eventTitle">into Cabala🖤💜</span>
             <br>
@@ -409,6 +415,9 @@
           </div>
         </div>
       </div>
+      <div id="noVod" class="eventFeed noVOD">
+        <span>no streams active -- check back later for more!!</span>
+      </div>
       <br>
       <span>* lineups are subject to change</span>
     </div>
@@ -476,14 +485,42 @@
           <img src="https://yt3.ggpht.com/sJprgPkQHUeB06IHBih_UOYGCYJWSb3Zep4TqkYs9JA2mCLJ97wj5O1TkAHzfKFIzuFue2PvRrrPxA" alt="" width="500px" style="-o-object-position: center 33%; object-position: center 33%;">
           <div>
             <span id="dailyKaiser-5"></span>
-            <span type="eventText">RuRu (Pixiv)</span>
+            <span type="eventText">わねこ☆ (Pixiv)</span>
           </div>
         </div>
         <div onclick="window.open('https://x.com/i/status/1776648614787354644')"> <!-- meme -->
-          <img src="https://yt3.ggpht.com/lafdgdSX2bjVpCvEd6fdQKyPi6bYSPZW04Ddtzyzf6OQutaPDJINV5NjppRmeF1FNAgQyT6ybgq1Hg" alt="" width="500px" style="-o-object-position: center 33%; object-position: center 33%;">
+          <img src="https://yt3.ggpht.com/lafdgdSX2bjVpCvEd6fdQKyPi6bYSPZW04Ddtzyzf6OQutaPDJINV5NjppRmeF1FNAgQyT6ybgq1Hg" alt="" width="500px">
           <div>
             <span id="dailyKaiser-6"></span>
             <span memeFormat type="eventText">Manasenrik1sser (X)</span>
+          </div>
+        </div>
+        <div onclick="window.open('https://reddit.com/r/Priconne/comments/15cdr2x/saw_someone_mention_a_crk_collab_and_it_reminded')"> <!-- illust -->
+          <img src="https://yt3.ggpht.com/jggceBcVL-r3Hdccip9jssqg07pZNZOxRRCWZdP5wqqN-1j12b1nLmgzl0i3PS3rUJJ9PTKNj-7f" alt="" width="500px">
+          <div>
+            <span id="dailyKaiser-7"></span>
+            <span type="eventText">ManaSenriKisser (Reddit)</span>
+          </div>
+        </div>
+        <div onclick="window.open('https://reddit.com/r/Priconne/comments/1aza5n9/made_one_of_handwritten_illusts_of_mama_kaiser')"> <!-- illust -->
+          <img src="https://yt3.ggpht.com/JlB4NB9PLacikH6BJHp6Zu6Op_MKQdG59AlFzhh407DcEWhAPfGV8cdl6cbkqVzA31y7QBwFe1M0TDc" alt="" width="500px">
+          <div>
+            <span id="dailyKaiser-8"></span>
+            <span type="eventText">thebelovedmoon (Reddit)</span>
+          </div>
+        </div>
+        <div onclick="window.open('https://pixiv.net/en/artworks/72729506')"> <!-- illust -->
+          <img src="https://yt3.ggpht.com/b_OJFQP8K1f23AGdNCHmQCQrPqQIzvg-UH35ZlFgc9YqzVfVYh0sF46wP5XZuO7Xdbe0F2f80lYUmw" alt="" width="500px">
+          <div>
+            <span id="dailyKaiser-9"></span>
+            <span type="eventText">稲荷御前守助廣 (Pixiv)</span>
+          </div>
+        </div>
+        <div onclick="window.open('https://pixiv.net/en/artworks/82526640')"> <!-- illust -->
+          <img src="https://yt3.ggpht.com/Z72v6_DG8jltaAoywO6o0z7_I5JKEEdAVyiY3INvH1ZCfHovrYUeAG-erKzgiELzceyY8mTbB5DnF3E" alt="" width="500px" style="-o-object-position: center top; object-position: center top;">
+          <div>
+            <span id="dailyKaiser-10"></span>
+            <span type="eventText">ddolggol (Pixiv)</span>
           </div>
         </div>
       </div>

@@ -183,6 +183,16 @@ div[completed] { /* if an event is already done */
   display: none !important;
 }
 
+.noVOD {
+  display: none;
+  width: 100% !important;
+  padding: 12.5rem 0 !important;
+  text-align: center;
+  font-weight: bold;
+  white-space: initial;
+  -ms-overflow-style: initial;
+}
+
 div[class="intro"] > div > div > div[socials] {
   margin: unset;
 }
@@ -208,8 +218,16 @@ div[dailyKaiser] > .dailyKaiser > div > img {
 div[dailyKaiser] > .dailyKaiser > div > div > span::before {
   content: "illust. ";
 }
-div[dailyKaiser] > .dailyKaiser > div > div > span[memeFormat]::before { /* override default span */
+
+/* override default span in .dailyKaiser */
+div[dailyKaiser] > .dailyKaiser > div > div > span[memeFormat]::before {
   content: "a meme by ";
+}
+div[dailyKaiser] > .dailyKaiser > div > div > span[GIFormat]::before {
+  content: "GIF provided by ";
+}
+div[dailyKaiser] > .dailyKaiser > div > div > span[clipFormat]::before {
+  content: "clip provided by ";
 }
 
 span[id^="dailyKaiser-"] {
