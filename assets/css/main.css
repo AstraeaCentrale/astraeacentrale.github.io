@@ -6,6 +6,7 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   word-wrap: break-word;
+  scroll-behavior: smooth;
 }
 * {
   box-sizing: border-box;
@@ -37,4 +38,45 @@ button {
 }
 button:hover {
   background-color: #383335;
+}
+
+.material-symbols-outlined { /* googlefonts */
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  color: inherit;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* responsive fontsize */
+@media screen and (max-width: 540px) {
+  body {
+    font-size: small;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 1080px) {
+  body {
+    font-size: normal;
+  }
+}
+@media screen and (min-width: 1080px) and (max-width: 1620px) {
+  body {
+    font-size: large;
+  }
+}
+@media screen and (min-width: 1620px) and (max-width: 2160px) {
+  body {
+    font-size: larger;
+  }
+}
+@media screen and (min-width: 2160px) and (max-width: 2700px) {
+  body {
+    font-size: x-large;
+  }
+}
+@media screen and (min-width: 2700px) {
+  body {
+    font-size: xx-large;
+  }
 }

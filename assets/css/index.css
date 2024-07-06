@@ -1,11 +1,146 @@
-.fullscreen {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
+[priconneBG] { /* [heroTxt] background */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.fullscreen > div {
+
+/* priconne msteams bg (© 2018 Cygames, retrieved via @priconne_eng on X) */
+[priconne1] { background-image: url("/assets/images/background/priconne/priconne_1.jpg"); }
+[priconne2] { background-image: url("/assets/images/background/priconne/priconne_2.jpg"); }
+[priconne3] { background-image: url("/assets/images/background/priconne/priconne_3.jpg"); }
+[priconne4] { background-image: url("/assets/images/background/priconne/priconne_4.jpg"); }
+
+/* ingame pictures (© 2018 Cygames, retrieved via https://redive.estertion.win) */
+[Senri1] { background-image: url("https://redive.estertion.win/card/full/106931.webp"); }
+[Senri2] { background-image: url("https://redive.estertion.win/card/story/200500402_20180416_1019.webp"); }
+[Senri3] { background-image: url("https://redive.estertion.win/card/story/200500401_20180416_1018.webp"); }
+[Senri4] { background-image: url("https://redive.estertion.win/card/story/200700801_20180717_1039.webp"); }
+[Senri5] { background-image: url("https://redive.estertion.win/card/story/201400901_20191115_1333.webp"); }
+[Senri6] { background-image: url("https://redive.estertion.win/card/story/508500203_20220207_1105.webp"); }
+[Senri7] { background-image: url("https://redive.estertion.win/card/story/9000174.webp"); }
+
+[OxO] { background-image: url("https://redive.estertion.win/card/story/9000000_20200806_1102.webp"); }
+[gourmetGuild] { background-image: url("https://redive.estertion.win/card/story/9000085_20201105_1106.webp"); }
+
+[reDive1] { background-image: url("https://redive.estertion.win/card/story/9000092_20210215_2203.webp"); }
+[reDive2] { background-image: url("https://redive.estertion.win/card/story/9000093_20210215_2203.webp"); }
+[reDive3] { background-image: url("https://redive.estertion.win/card/story/9000094_20210215_2203.webp"); }
+[reDive4] { background-image: url("https://redive.estertion.win/card/story/9000101_20220215_1404.webp"); }
+[reDive5] { background-image: url("https://redive.estertion.win/card/story/9000131_20220318_1104.webp"); }
+
+[astraeaNight] { background-image: url("/assets/images/background/astraeaNight.png"); }
+
+[heroTxt] {
+  width: 100vw;
+  padding: 15rem 1.75rem;
+  z-index: 1;
+}
+[heroTxt] > div {
+  width: 50rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+[priconneHero] {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+}
+
+span[navHere] {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 5rem;
+  font-size: 3.75rem;
   text-align: center;
+  -webkit-animation: arrowBounce 2s ease infinite;
+  -moz-animation: arrowBounce 2s ease infinite;
+  -o-animation: arrowBounce 2s ease infinite;
+  animation: arrowBounce 2s ease infinite;
+}
+@-webkit-keyframes arrowBounce {
+	0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+	40% { transform: translateY(30px); }
+	60% { transform: translateY(15px); }
+}
+@-moz-keyframes arrowBounce {
+	0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+	40% { transform: translateY(30px); }
+	60% { transform: translateY(15px); }
+}
+@-o-keyframes arrowBounce {
+	0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+	40% { transform: translateY(30px); }
+	60% { transform: translateY(15px); }
+}
+@keyframes arrowBounce {
+	0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+	40% { transform: translateY(30px); }
+	60% { transform: translateY(15px); }
+}
+
+div[heroIntro] {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-linear-gradient(to bottom, #46404200 50%, #464042c0);
+  background: -moz-linear-gradient(to bottom, #46404200 50%, #464042c0);
+  background: -o-linear-gradient(to bottom, #46404200 50%, #464042c0);
+  background: linear-gradient(to bottom, #46404200 50%, #464042c0);
+}
+div[gourmetIntro] {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-linear-gradient(to bottom, #cabbb300 50%, #cabbb3c0);
+  background: -moz-linear-gradient(to bottom, #cabbb300 50%, #cabbb3c0);
+  background: -o-linear-gradient(to bottom, #cabbb300 50%, #cabbb3c0);
+  background: linear-gradient(to bottom, #cabbb300 50%, #cabbb3c0);
+}
+div[senriIntro] {
+  position: absolute;
+  width: 100vw;
+  height: 150vh;
+  background: -webkit-linear-gradient(to bottom, #3d374c00 50%, #3d374cc0);
+  background: -moz-linear-gradient(to bottom, #3d374c00 50%, #3d374cc0);
+  background: -o-linear-gradient(to bottom, #3d374c00 50%, #3d374cc0);
+  background: linear-gradient(to bottom, #3d374c00 50%, #3d374cc0);
+}
+
+span[gourmetBtn] {
+  background-color: #cabbb3;
+  padding: 1rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  box-shadow: inset 0.2rem 0.2rem 0.2rem 0 #e5e3e180, inset -0.2rem -0.2rem 0.2rem 0 #46404280;
+}
+span[gourmetBtn]:hover {
+  background-color: #ddcabf;
+}
+span[senriBtn] {
+  background-color: #3d374c;
+  padding: 1rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  box-shadow: inset 0.2rem 0.2rem 0.2rem 0 #e5e3e180, inset -0.2rem -0.2rem 0.2rem 0 #1c182280;
+}
+span[senriBtn]:hover {
+  background-color: #464042;
+}
+
+footer {
+  padding: 1rem 2rem;
+  font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  font-size: small;
+  text-align: right;
+  color: #cabbb3;
+  background-color: #464042;
+}
+footer > span {
+  display: block;
 }

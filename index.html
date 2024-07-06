@@ -23,15 +23,8 @@
     <style type="text/css">
       /* inpage css */
       @import url("/assets/css/index.css");
-      body {
-        background-image: url("/assets/images/background/priconne/priconne_2.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-      .fullscreen {
-        background-color: #464042c0;
+      .luna-gfont {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
       }
     </style>
     <!-- js -->
@@ -46,13 +39,75 @@
     </script>
   </head>
   <body onload="start()">
-    <div class="fullscreen">
-      <div>
-        <img src="/assets/svg/gdl_ac_light.svg" alt="" width="500px">
-        <p>
-          returns July 2024
-        </p>
+    <div priconneBG priconne2 priconneHero>
+      <div heroIntro></div>
+      <span navHere class="material-symbols-outlined">arrow_downward</span>
+    </div>
+    <div priconneBG priconne2>
+      <div heroTxt style="background-color: #464042c0;">
+        <div style="text-align: right;">
+          <img src="/assets/svg/ac_light.svg" alt="" width="375px" style="display: inline-block;">
+          <br><br>
+          <h2>a new generation of storytellers</h2>
+          <p>
+            we tell the stories of the people of Landosol, explore the depths of each
+            stories, and make their stories known throughout Astraea and beyond.
+          </p>
+          <p>
+            we are home to our experimental ventures, exploring ways to make each story
+            count.
+          </p>
+        </div>
       </div>
     </div>
+    <div priconneBG gourmetGuild priconneHero>
+      <div gourmetIntro></div>
+    </div>
+    <div priconneBG gourmetGuild>
+      <div heroTxt style="background-color: #cabbb3c0;">
+        <div style="text-align: left; color: #464042;">
+          <h2>beyond the Gourmet, beyond Re:Dive</h2>
+          <p>
+            we initially provisioned Gourmet's Day Life as our way to let the world know
+            about Gourmet Guild and beyond through its guildhouse activities.
+          </p>
+          <p>
+            with the cessation of Re:Dive EN last 30 Apr, we aim to expand our horizons
+            through upstreaming content from its JP counterpart and related parties.
+          </p>
+          <span gourmetBtn class="material-symbols-outlined" title="read the announcement from @priconne_en on X" onclick="window.open('https://x.com/i/status/1652477875331932161', '_blank')">info</span>
+          <span gourmetBtn class="material-symbols-outlined" title="read our open message" onclick="openletter()">description</span>
+          <span gourmetBtn class="material-symbols-outlined" title="listen to &quot;Until we meet again, Astraea.&quot; on YouTube" onclick="window.open('https://youtu.be/PU3HybaN1Kc', '_blank')">music_note</span>
+          <br><br>
+          <h2>one of Luna's brand benefactors</h2>
+          <p>our commitment remains even with changing hands.</p>
+          <p>
+            as Astraea Centrale, we're proud to serve the nation with the blessing of the
+            Luna as one of the brands under tbmassoc -- furthering our goal to spread the
+            word about Landosol and beyond.
+          </p>
+          <span gourmetBtn class="material-symbols-outlined luna-gfont" title="follow the Luna🌙" onclick="window.open('https://tbmassoc.github.io', '_blank')">dark_mode</span>
+        </div>
+      </div>
+    </div>
+    <div priconneBG senri1 priconneHero style="height: 150vh; background-position: center top;">
+      <div senriIntro></div>
+    </div>
+    <div priconneBG senri1 style="background-position: center top;">
+      <div heroTxt style="background-color: #3d374cc0; color: white; padding: 50rem 1.75rem 25rem 1.75rem;">
+        <div style="text-align: center;">
+          <img src="/assets/images/logo/千里真那Ch.png" alt="" width="375px" style="margin: 0 auto;">
+          <br>
+          <h2>ready to witness the beauty of the Senri?🖤💜</h2>
+          <p>explore our VTuber venture</p>
+          <br>
+          <span senriBtn class="material-symbols-outlined" title="click here to access 千里真那Ch." onclick="window.open('senrimana', '_blank')">arrow_forward</span>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span>Princess Connect! Re:Dive and related resources © 2018 Cygames</span>
+      <span>© 2021 Astraea Centrale, a tbmassoc brand</span>
+    </footer>
   </body>
 </html>

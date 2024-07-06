@@ -1,0 +1,20 @@
+body {
+  background-image: url("https://redive.estertion.win/card/story/201400901_20191115_1333.webp");
+  background-size: cover;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #464042c0;
+}
+.fullscreen > div {
+  text-align: center;
+}
