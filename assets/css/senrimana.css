@@ -61,7 +61,6 @@ footer > span {
   width: 100vw;
   height: 100vh;
   /* background-image: url("/assets/images/background/20240625_1.png"); */
-  background-image: url("https://redive.estertion.win/card/full/106931.webp");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -218,7 +217,7 @@ div[dailyKaiser] > .dailyKaiser > div > div > span[GIFormat]::before {
   content: "GIF provided by ";
 }
 div[dailyKaiser] > .dailyKaiser > div > div > span[clipFormat]::before {
-  content: "clip provided by ";
+  content: "clip from ";
 }
 
 span[id^="dailyKaiser-"] {
@@ -238,9 +237,15 @@ div[senri] {
   padding-top: 2.5rem;
 }
 button[senri] {
+  background-color: #3d374c;
+  border: #b1afad .125rem solid;
+  color: inherit;
   display: block;
   margin: 0 auto;
   font-weight: bold;
+}
+button[senri]:hover {
+  background-color: #1c1822;
 }
 img[senri] {
   aspect-ratio: 16 / 9;
