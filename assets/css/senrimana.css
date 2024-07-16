@@ -219,6 +219,12 @@ div[dailyKaiser] > .dailyKaiser > div > div > span[GIFormat]::before {
 div[dailyKaiser] > .dailyKaiser > div > div > span[clipFormat]::before {
   content: "clip from ";
 }
+div[dailyKaiser] > .dailyKaiser > div > div > span[screencap]::before {
+  content: "screencap by ";
+}
+div[dailyKaiser] > .dailyKaiser > div > div > span[picrew]::before {
+  content: "a picrew edit by ";
+}
 
 span[id^="dailyKaiser-"] {
   font-size: .875rem;
