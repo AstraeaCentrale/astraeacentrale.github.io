@@ -15,6 +15,4 @@ body {
   padding: 15px;
   background-color: #464042c0;
 }
-.fullscreen > div {
-  text-align: center;
-}
+.fullscreen > div { text-align: center; }
