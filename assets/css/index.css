@@ -5,13 +5,13 @@
   background-attachment: fixed;
 }
 
-/* priconne msteams bg (© 2018 Cygames, retrieved via @priconne_eng on X) */
+/* priconne msteams bg (© 2018 Cygames, Inc.; retrieved via @priconne_eng on X) */
 [priconne1] { background-image: url("/assets/images/background/priconne/priconne_1.jpg"); }
 [priconne2] { background-image: url("/assets/images/background/priconne/priconne_2.jpg"); }
 [priconne3] { background-image: url("/assets/images/background/priconne/priconne_3.jpg"); }
 [priconne4] { background-image: url("/assets/images/background/priconne/priconne_4.jpg"); }
 
-/* ingame pictures (© 2018 Cygames, retrieved via https://redive.estertion.win) */
+/* ingame pictures (© 2018 Cygames, Inc.; retrieved via https://redive.estertion.win) */
 [Senri1] { background-image: url("https://redive.estertion.win/card/full/106931.webp"); }
 [Senri2] { background-image: url("https://redive.estertion.win/card/story/200500402.webp"); }
 [Senri3] { background-image: url("https://redive.estertion.win/card/story/200500401.webp"); }
